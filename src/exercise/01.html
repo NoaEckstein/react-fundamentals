@@ -2,6 +2,25 @@
 <!-- http://localhost:3000/isolated/exercise/01.html -->
 
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
+<html>
+<!-- <script type="module">
+    let newDiv = document.createElement('div'); newDiv.textContent = '...'; let parentNode = document.getElementById('root'); parentNode.append(newDiv);
+</script>
+
+<body>
+    <div id="root">Hello World</div>
+</body> -->
+
+<body>
+</body>
+<script type="module">
+    let newDiv = document.createElement('div'); newDiv.textContent = 'Hello!'; newDiv.setAttribute('id','root'); let parentNode = document.querySelector('body'); parentNode.append(newDiv); let root = document.querySelector('div'); root.setAttribute('id','root');
+</script>
+
+
+</html>
+
+<!--can be created also with document.body.append()-->>
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
